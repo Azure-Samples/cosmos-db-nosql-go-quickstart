@@ -1,0 +1,36 @@
+name: Validate Go solution
+on:
+  schedule:
+    - cron: '0 0 * * 2'
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+jobs:
+  validate-python:
+    name: Validate Go solution
+    runs-on: ubuntu-latest
+    container: golang:1-alpine
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4     
+      - name: Check Go version
+        run: go version       
+      - name: Install packages
+        run: go mod download
+        working-directory: ./src
+      - name: Verify dependencies
+        run: go mod verify
+        working-directory: ./src
+      - name: Verify code
+        run: go vet
+        working-directory: ./src
+      - name: Run static check
+        run: |
+          go install honnef.co/go/tools/cmd/staticcheck@latest
+          staticcheck
+        working-directory: ./src
+      - name: Test go code
+        run: go test
+        working-directory: ./src

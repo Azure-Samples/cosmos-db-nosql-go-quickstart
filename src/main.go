@@ -32,10 +32,14 @@ func main() {
 
 	server.OnEvent("/", "start", func(s socketio.Conn, msg string) {
 		s.SetContext(msg)
-		log.Println("Greeting:", msg)
-		startCosmos(func (msg string) {
+		err := startCosmos(func (msg string) {
+			log.Println(msg)
 			s.Emit("new_message", msg)
 		})
+		if err != nil {
+			s.Close()
+			log.Fatal(err)
+		}
 	})
 
 	server.OnError("/", func(s socketio.Conn, e error) {
