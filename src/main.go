@@ -25,17 +25,21 @@ func main() {
 	)
 
 	server.OnConnect("/", func(s socketio.Conn) error {
-		//s.SetContext("")
+		s.SetContext("")
 		log.Println("Connected:", s.ID())
 		return nil
 	})
 
 	server.OnEvent("/", "start", func(s socketio.Conn, msg string) {
-		//s.SetContext(msg)
-		startCosmos(func (msg string) {
+		s.SetContext(msg)
+		err := startCosmos(func (msg string) {
 			log.Println(msg)
 			s.Emit("new_message", msg)
 		})
+		if err != nil {
+			s.Close()
+			log.Fatal(err)
+		}
 	})
 
 	server.OnError("/", func(s socketio.Conn, e error) {

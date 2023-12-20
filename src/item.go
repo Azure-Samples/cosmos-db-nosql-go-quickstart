@@ -6,6 +6,7 @@ type Item struct {
 	Category 	string	`json:"category"`
 	Name 		string	`json:"name"`
 	Quantity 	int		`json:"quantity"`
-	Sale 		bool	`json:"sale"`
+	Price		float32	`json:"price"`
+	Clearance	bool	`json:"clearance"`
 }
 // </model>

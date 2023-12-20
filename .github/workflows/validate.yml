@@ -15,8 +15,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4     
-      - name: Check Python version
+      - name: Check Go version
         run: go version       
       - name: Install packages
         run: go mod download
+        working-directory: ./src
+      - name: Verify dependencies
+        run: go mod verify
+        working-directory: ./src
+      - name: Verify code
+        run: go vet
+        working-directory: ./src
+      - name: Run static check
+        run: |
+          go install honnef.co/go/tools/cmd/staticcheck@latest
+          staticcheck
+        working-directory: ./src
+      - name: Test go code
+        run: go test
         working-directory: ./src

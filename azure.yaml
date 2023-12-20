@@ -4,7 +4,7 @@ name: cosmos-db-nosql-go-quickstart
 services:
   web:
     project: ./src
-    language: python
+    language: js
     host: containerapp
     docker:
       path: ./Dockerfile
