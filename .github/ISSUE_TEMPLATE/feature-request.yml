@@ -1,4 +1,4 @@
-name: Feature request
+name: 🎫 Feature request
 description: Suggest an idea for this project
 title: "[FEATURE] "
 labels: ["new-feature"]
@@ -6,8 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form to request new features. These requests will be reviewed and prioritized accordingly.
-  - type: markdown
+        Use this form to request new features.
+        
+        > [!IMPORTANT]
+        > These requests will be reviewed and prioritized.
+  - type: textarea
     id: description
     attributes:
       label: Description
