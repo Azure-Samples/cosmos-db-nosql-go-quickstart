@@ -1,5 +1,5 @@
 name: 🐞 Bug report
-description: Create a report to help us improve
+description: File a bug report for this sample application.
 title: "[BUG] "
 labels: ["bug"]
 assignees:
