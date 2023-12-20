@@ -25,15 +25,15 @@ func main() {
 	)
 
 	server.OnConnect("/", func(s socketio.Conn) error {
-		s.SetContext("")
+		//s.SetContext("")
 		log.Println("Connected:", s.ID())
 		return nil
 	})
 
 	server.OnEvent("/", "start", func(s socketio.Conn, msg string) {
-		s.SetContext(msg)
-		log.Println("Greeting:", msg)
+		//s.SetContext(msg)
 		startCosmos(func (msg string) {
+			log.Println(msg)
 			s.Emit("new_message", msg)
 		})
 	})
