@@ -12,7 +12,7 @@ import (
 )
 
 func startCosmos(writeOutput func(msg string)) error {
-	endpoint := os.Getenv("COSMOS_DB_ENDPOINT")
+	endpoint := os.Getenv("AZURE_COSMOS_DB_NOSQL_ENDPOINT")
 	log.Println("ENDPOINT:", endpoint)
 
 	// <create_client>
