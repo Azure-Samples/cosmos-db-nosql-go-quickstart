@@ -1,6 +1,5 @@
 package main
 
-// <model>
 type Item struct {
 	Id 			string	`json:"id"`
 	Category 	string	`json:"category"`
@@ -9,4 +8,3 @@ type Item struct {
 	Price		float32	`json:"price"`
 	Clearance	bool	`json:"clearance"`
 }
-// </model>
