@@ -15,7 +15,7 @@ func startCosmos(writeOutput func(msg string)) error {
 
 	// <create_client>
 	endpoint := os.Getenv("AZURE_COSMOS_DB_NOSQL_ENDPOINT")
-	log.Println("ENDPOINT:", endpoint)
+	log.Println("ENDPOINT: ", endpoint)
 
 	credential, err := azidentity.NewDefaultAzureCredential(nil)
 	if err != nil {
