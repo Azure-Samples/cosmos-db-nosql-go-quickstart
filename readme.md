@@ -1,6 +1,18 @@
+---
+page_type: sample
+name: Quickstart: Azure Cosmos DB for NoSQL and Azure SDK for Go
+description: This is a simple web application to illustrate common basic usage of Azure Cosmos DB for NoSQL and the Azure SDK for Go.
+urlFragment: template
+languages:
+- go
+- azdeveloper
+products:
+- azure-cosmos-db
+---
+
 # Quickstart: Azure Cosmos DB for NoSQL client library for Go
 
-This is a simple Spring Web application to illustrate common basic usage of Azure Cosmos DB for NoSQL's client library for Go. This sample application accesses an existing account, database, and container using the [`azcosmos`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/data/azcosmos) and [`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) packages. Modify the source code and leverage the Infrastructure as Code (IaC) Bicep assets to get up and running quickly.
+This is a simple web application to illustrate common basic usage of Azure Cosmos DB for NoSQL's client library for Go. This sample application accesses an existing account, database, and container using the [`azcosmos`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/data/azcosmos) and [`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) packages. Modify the source code and leverage the Infrastructure as Code (IaC) Bicep assets to get up and running quickly.
 
 When you are finished, you will have a fully functional web application deployed to Azure.
 
