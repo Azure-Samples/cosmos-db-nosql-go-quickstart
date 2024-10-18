@@ -1,6 +1,6 @@
 ---
 page_type: sample
-name: Quickstart: Azure Cosmos DB for NoSQL and Azure SDK for Go
+name: "Quickstart: Azure Cosmos DB for NoSQL and Azure SDK for Go"
 description: This is a simple web application to illustrate common basic usage of Azure Cosmos DB for NoSQL and the Azure SDK for Go.
 urlFragment: template
 languages:
