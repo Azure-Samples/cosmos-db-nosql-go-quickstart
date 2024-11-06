@@ -49,7 +49,7 @@
             const socket = io({
                 forceNew: false,
                 reconnection: true,
-                transports: ['websocket'],
+                transports: ['websocket', 'polling'],
                 reconnectionAttempts: 1,
                 reconnectionDelayMax: 2000
             });

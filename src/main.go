@@ -32,7 +32,7 @@ func main() {
 
 	server.OnEvent("/", "start", func(s socketio.Conn, msg string) {
 		s.SetContext(msg)
-		err := startCosmos(func (msg string) {
+		err := startCosmos(func(msg string) {
 			log.Println(msg)
 			s.Emit("new_message", msg)
 		})
@@ -57,5 +57,5 @@ func main() {
 	http.Handle("/", http.FileServer(http.Dir("./static")))
 
 	log.Println("Listening at localhost:8000...")
-    log.Fatal(http.ListenAndServe(":8000", nil))
+	log.Fatal(http.ListenAndServe(":8000", nil))
 }
