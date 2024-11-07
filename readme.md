@@ -16,13 +16,13 @@ products:
 
 This is a simple web application to illustrate common basic usage of Azure Cosmos DB for NoSQL's client library for Go. This sample application accesses an existing account, database, and container using the [`azcosmos`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/data/azcosmos) and [`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) packages.
 
-### Prerequisites
+## Prerequisites
 
 - [Docker](https://www.docker.com/)
 - [Azure Developer CLI](https://aka.ms/azd-install)
 - [Go 1.21 or newer](https://go.dev/dl/)
 
-### Quickstart
+## Quickstart
 
 1. Log in to Azure Developer CLI.
 
