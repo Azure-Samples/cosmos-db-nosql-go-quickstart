@@ -71,7 +71,7 @@ func startCosmos(writeOutput func(msg string)) error {
 
 	{
 		item := Item{
-			Id:        "70b63682-b93a-4c77-aad2-65501347265f",
+			Id:        "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb",
 			Category:  "gear-surf-surfboards",
 			Name:      "Yamba Surfboard",
 			Quantity:  12,
@@ -107,7 +107,7 @@ func startCosmos(writeOutput func(msg string)) error {
 
 	{
 		item := Item{
-			Id:        "25a68543-b90c-439d-8332-7ef41e06a0e0",
+			Id:        "bbbbbbbb-1111-2222-3333-cccccccccccc",
 			Category:  "gear-surf-surfboards",
 			Name:      "Kiama Classic Surfboard",
 			Quantity:  25,
@@ -147,7 +147,7 @@ func startCosmos(writeOutput func(msg string)) error {
 
 		context := context.TODO()
 
-		itemId := "70b63682-b93a-4c77-aad2-65501347265f"
+		itemId := "aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb"
 
 		response, err := container.ReadItem(context, partitionKey, itemId, nil)
 		if err != nil {
