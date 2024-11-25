@@ -12,9 +12,9 @@ products:
 ---
 -->
 
-# Quickstart: Azure Cosmos DB for NoSQL client library for Go
+# Quickstart: Azure Cosmos DB for NoSQL - Azure SDK for Go
 
-This is a simple web application to illustrate common basic usage of Azure Cosmos DB for NoSQL's client library for Go. This sample application accesses an existing account, database, and container using the [`azcosmos`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/data/azcosmos) and [`azidentity`](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) packages.
+This is a simple web application to illustrate common basic usage of Azure Cosmos DB for NoSQL with the Azure SDK for Go.
 
 ## Prerequisites
 
@@ -24,14 +24,11 @@ This is a simple web application to illustrate common basic usage of Azure Cosmo
 
 ## Quickstart
 
-1. Log in to Azure Developer CLI.
+1. Log in to Azure Developer CLI. *This is only required once per-install.*
 
     ```bash
     azd auth login
     ```
-
-    > [!TIP]
-    > This is only required once per-install.
 
 1. Initialize this template (`cosmos-db-nosql-go-quickstart`) using `azd init`
 
