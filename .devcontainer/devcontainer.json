@@ -8,7 +8,6 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "bierner.markdown-mermaid",
         "golang.Go",
         "ms-azuretools.azure-dev",
         "ms-azuretools.vscode-cosmosdb"
